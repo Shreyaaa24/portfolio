@@ -1,0 +1,222 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shreya Srivastava | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 60px 0;
+    }
+
+    header.hero {
+      background: linear-gradient(135deg, #fc466b, #3f5efb);
+      color: #fff;
+      text-align: center;
+      padding: 100px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin-bottom: 20px;
+      animation: zoomIn 1.2s ease;
+    }
+
+    header.hero h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header.hero h1 span {
+      color: #ffd700;
+    }
+
+    header.hero p {
+      font-size: 1.4rem;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 30px;
+      background: #ffd700;
+      color: #000;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.1);
+      background: #ffa500;
+    }
+
+    h2.underline {
+      font-size: 2.2rem;
+      border-bottom: 3px solid #ff1493;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 25px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+      text-align: center;
+      transition: transform 0.4s, box-shadow 0.4s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.3);
+    }
+
+    .card h3 {
+      color: #ff69b4;
+      margin-bottom: 10px;
+    }
+
+    .card a {
+      color: #87cefa;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .about, .projects, .contact {
+      animation: slideUp 1s ease-out;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      background: #0f0c29;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes zoomIn {
+      0% { transform: scale(0.85); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(40px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @media screen and (max-width: 768px) {
+      header.hero h1 {
+        font-size: 2.2rem;
+      }
+
+      header.hero p {
+        font-size: 1.1rem;
+      }
+
+      h2.underline {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <img src="photojpg.jpg" alt="profile" class="profile-img">
+      <h1>Hi, I'm <span>Shreya Srivastava</span></h1>
+      <p>Frontend Developer | Open Source Contributor</p>
+      <a href="#projects" class="btn">See My Work</a>
+      <br><br>
+      <a href="Shreya-resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </header>
+
+  <section class="about">
+    <div class="container">
+      <h2 class="underline">About Me</h2>
+      <p>
+        I'm a frontend developer who loves creating beautiful, responsive websites. <br>
+        I enjoy clean UI, smooth animations, and open-source collaboration.<br><br>
+        I know programming languages like <strong>C, Python, and Java</strong>.<br>
+        A beginner as open-source contributor, I'm learning actively and improving every day.<br>
+        I'm skilled in <strong>HTML, CSS, JavaScript, and ReactJS</strong> for web development.
+      </p>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="underline">Projects</h2>
+      <div class="project-grid">
+        <div class="card">
+          <h3>Restaurant Website</h3>
+          <a href="https://github.com/CSI-Trainee-2024/Task1_shreya2313056" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Car Game</h3>
+          <a href="https://github.com/CSI-Trainee-2024/Task3_shreya2313056" target="_blank">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Hola</h3>
+          <a href="https://github.com/vanshguptaji/hola" target="_blank">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <div class="container">
+      <h2 class="underline">Contact</h2>
+      <p>Email: <a href="mailto:shreyaaa2464@gmail.com">shreyaaa2464@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/Shreyaaa24" target="_blank">github.com/Shreyaaa24</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/shreya-srivastava-068b50315" target="_blank">linkedin.com/in/shreya</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shreya Srivastava. All rights reserved.</p>
+  </footer>
+</body>
+</html>
